@@ -226,13 +226,13 @@ function saveHighscore() {
     highscores.push(newScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-    // redirect to next page
+    
 
   }
 }
 
 function checkForEnter(event) {
-  // "13" represents the enter key
+  
   if (event.key === "Enter") {
     saveHighscore();
   }
